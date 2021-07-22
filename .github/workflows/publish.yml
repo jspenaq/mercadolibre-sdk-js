@@ -1,0 +1,24 @@
+on:
+  # Trigger the workflow on push but only for the master branch
+  push:
+    branches:
+      - master
+
+name: 'Publish to NPM'
+jobs:
+  test:
+    name: Run all tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Test using Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Clean install and run jest
+        run: yarn install --frozen-lockfile
+      - name: Publish to NPM
+        uses: S-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }
