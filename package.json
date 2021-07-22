@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "Mercado Libre SDK for Nodejs",
   "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier -w .",
+    "pretest": "eslint --cache --fix && npm run format",
+    "test": "jest"
+  },
   "repository": "git@github.com:jspenaq/mercadolibre-sdk-js.git",
   "keywords": [
     "node",
@@ -13,5 +21,22 @@
     "mercadolibre"
   ],
   "author": "Juan Sebastian Peña <jspenaq@unal.edu.co>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.4.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.1.0",
+    "prettier": "^2.3.2"
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
+  }
 }
