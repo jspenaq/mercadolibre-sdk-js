@@ -1,5 +1,5 @@
 {
-  "name": "mercadolibre-sdk-js",
+  "name": "mercadolibre-sdk",
   "version": "1.0.0",
   "description": "Mercado Libre SDK for Nodejs",
   "main": "index.js",
