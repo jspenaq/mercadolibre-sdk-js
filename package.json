@@ -1,0 +1,9 @@
+{
+  "name": "mercadolibre-sdk-js",
+  "version": "1.0.0",
+  "description": "Mercado Libre SDK for Nodejs",
+  "main": "index.js",
+  "repository": "git@github.com:jspenaq/mercadolibre-sdk-js.git",
+  "author": "Juan Sebastian Peña <jspenaq@unal.edu.co>",
+  "license": "MIT"
+}
