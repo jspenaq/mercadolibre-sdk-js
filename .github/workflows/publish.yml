@@ -1,12 +1,11 @@
 on:
-  # Trigger the workflow on push but only for the master branch
   push:
     branches:
       - master
 
 name: 'Publish to NPM'
 jobs:
-  test:
+  publish:
     name: Run all tests
     runs-on: ubuntu-latest
     steps:
