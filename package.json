@@ -4,6 +4,14 @@
   "description": "Mercado Libre SDK for Nodejs",
   "main": "index.js",
   "repository": "git@github.com:jspenaq/mercadolibre-sdk-js.git",
+  "keywords": [
+    "node",
+    "api",
+    "rest",
+    "client",
+    "ecommerce",
+    "mercadolibre"
+  ],
   "author": "Juan Sebastian Peña <jspenaq@unal.edu.co>",
   "license": "MIT"
 }
