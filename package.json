@@ -1,8 +1,8 @@
 {
   "name": "mercadolibre-sdk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mercado Libre SDK for Nodejs",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint .",
