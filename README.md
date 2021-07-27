@@ -2,11 +2,13 @@
 
 ## Installation
 
+With npm
+
 ```shell
 npm install mercadolibre-sdk
 ```
 
-or
+or with Yarn
 
 ```shell
 yarn add mercadolibre-sdk
