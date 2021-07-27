@@ -33,6 +33,10 @@
     "lint-staged": "^11.1.0",
     "prettier": "^2.3.2"
   },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "got": "^11.8.2"
+  },
   "lint-staged": {
     "*.{js}": [
       "eslint --cache --fix",
